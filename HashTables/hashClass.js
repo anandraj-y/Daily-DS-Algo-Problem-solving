@@ -82,4 +82,3 @@ Hash.set("cyan", "#cdff00");
 Hash.set("pink", "#00ff00");
 Hash.set("pink", "#00ff00");
 Hash.set("pink", "#00ff00");
-Hash.set("pink", "#00ff00");
