@@ -56,4 +56,10 @@ node.insert(8);
 node.insert(15);
 node.insert(20);
 
+//        10
+//      /    \
+//     6     15
+//    / \      \
+//   3   8     20
+
 console.log(node.dfsPre()); // [10, 6, 8, 3, 15, 20];

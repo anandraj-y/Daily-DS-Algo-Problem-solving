@@ -36,15 +36,15 @@ class BinarySearchTree {
     }
   }
 
-  dfsPost() {
+  dfsInorder() {
     const current = this.root;
     const output = [];
-    const traversal = (node) => {
-      if (node.left) traversal(node.left);
-      if (node.right) traversal(node.right);
+    const traverse = (node) => {
+      if (node.left) traverse(node.left);
       output.push(node.val);
+      if (node.right) traverse(node.right);
     };
-    traversal(current);
+    traverse(current);
     return output;
   }
 }
@@ -63,4 +63,4 @@ node.insert(20);
 //    / \      \
 //   3   8     20
 
-console.log(node.dfsPost()); // [3, 8, 6, 20, 15, 10];
+console.log(node.dfsInorder()); // [3, 6, 8, 10, 15, 20]
